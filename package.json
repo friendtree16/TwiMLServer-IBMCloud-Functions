@@ -1,0 +1,14 @@
+{
+  "name": "hello-twilio",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "deploy": "ibmcloud fn action update hello-twilio dist/bundle.js --kind nodejs:10"
+  },
+  "dependencies": {
+    "twilio": "^3.48.2"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
